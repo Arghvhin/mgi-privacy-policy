@@ -127,21 +127,6 @@ p, li { font-size: 1rem; }
   max-width: 40vw;
   height: auto;
 }
-.brand-text {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-.brand-text strong {
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.brand-text small {
-  color: rgba(255,255,255,0.74);
-  font-size: 0.82rem;
-}
-.site-header.scrolled .brand-text small { color: var(--muted); }
 
 .nav-links {
   display: flex;
@@ -549,8 +534,13 @@ thead th {
 
 .site-footer {
   padding: 1.5rem 0 2.5rem;
-  border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(247, 147, 30, 0.05), transparent 50%);
+  border-top: 1px solid transparent;
+  background:
+    linear-gradient(104deg, rgba(5, 8, 15, 0.92) 16%, rgba(10, 15, 28, 0.86) 42%, rgba(63, 36, 11, 0.74) 100%),
+    radial-gradient(circle at 18% 38%, rgba(10, 120, 209, 0.22), transparent 30%),
+    radial-gradient(circle at 82% 24%, rgba(247, 147, 30, 0.35), transparent 20%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+  color: #fff;
 }
 .footer-grid {
   display: grid;
@@ -558,17 +548,17 @@ thead th {
   gap: 1rem;
   align-items: center;
 }
-.footer-brand { gap: 0.8rem; color: var(--text); }
+.footer-brand { gap: 0.8rem; color: #fff; }
 .footer-logo { width: 170px; }
-.site-footer p { margin: 0; color: var(--muted); }
+.site-footer p { margin: 0; color: rgba(255, 255, 255, 0.84); }
 .back-to-top {
   padding: 0.78rem 1rem;
   border-radius: 999px;
-  border: 1px solid var(--line);
-  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
   font-weight: 700;
 }
-.back-to-top:hover { background: rgba(247, 147, 30, 0.08); }
+.back-to-top:hover { background: rgba(255, 255, 255, 0.12); }
 
 @media (max-width: 1040px) {
   .hero-grid,
@@ -608,7 +598,6 @@ thead th {
   .nav-links button { width: 100%; }
   .nav-links a::after { left: 0.95rem; right: auto; width: 42px; }
   .brand-logo { width: 184px; }
-  .brand-text { display: none; }
   .hero { padding-top: 7.8rem; }
   .hero h1 { font-size: clamp(2.25rem, 11vw, 3.6rem); }
 }
@@ -645,7 +634,7 @@ thead th {
   }
   .site-header .brand,
   .site-header .nav-links a,
-  .site-header .brand-text small { color: #000 !important; }
+  .site-header { color: #000 !important; }
   .hero {
     margin-top: 0;
     padding: 1rem 0;
