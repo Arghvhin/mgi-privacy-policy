@@ -1,18 +1,15 @@
-# MobileGroup, Inc. Privacy Policy Static Website
+# MobileGroup, Inc. Privacy Policy Site
 
-This package contains a static privacy policy website for MobileGroup, Inc.
+This package contains a self-contained static privacy policy page customized for MobileGroup, Inc.
 
 ## Files
+- `index.html` — main page
+- `assets/styles.css` — responsive styling
+- `assets/script.js` — theme toggle, mobile navigation, reading progress, print, and copy-email behavior
+- `assets/mobilegroup-logo.png` — provided logo replacement
+- `assets/favicon.svg` — favicon
 
-- `index.html` - Main privacy policy page
-- `assets/styles.css` - Responsive styling, dark mode, and print styles
-- `assets/script.js` - Theme toggle, mobile menu, print button, reading progress, active section navigation, copy email button
-- `assets/favicon.svg` - Simple MGI favicon
-
-## Publish
-
-Upload the folder contents to any static host, such as Netlify, Vercel, GitHub Pages, Cloudflare Pages, an S3 bucket, or an existing web server.
-
-## Before publishing
-
-Replace the bracketed DPO placeholder in the Contact section with the verified Data Protection Officer name, title, and privacy email. Ask legal counsel or the Data Protection Officer to review the text before publication.
+## Notes
+- Replace the placeholder Data Protection Officer details before publishing.
+- Review all policy text with legal counsel or a Data Protection Officer.
+- Open `index.html` in a browser or deploy the folder to any static host.

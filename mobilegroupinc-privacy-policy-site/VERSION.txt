@@ -1,0 +1,9 @@
+MobileGroup, Inc. Privacy Policy Site - V2
+Created: 2026-06-10
+
+Updates in this package:
+- Removed the announcement bar.
+- Applied a second-pass orange, charcoal, and neutral color theme based on the provided screenshots.
+- Replaced previous branding with the provided MobileGroup logo.
+- Refined the header to overlay the hero and become solid on scroll.
+- Refined the hero section, navigation underlines, orange CTAs, angled transition, policy cards, and table styling.
