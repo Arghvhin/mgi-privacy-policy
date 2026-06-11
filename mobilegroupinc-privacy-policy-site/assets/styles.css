@@ -456,6 +456,11 @@ p, li { font-size: 1rem; }
   display: grid;
   gap: 1rem;
 }
+
+.summary-card h3 {
+  margin-top: 0;
+}
+
 .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1rem; }
 .summary-card,
 .cookie-grid > div,
@@ -473,11 +478,12 @@ p, li { font-size: 1rem; }
 .summary-card h3,
 .cookie-grid h3,
 .contact-card h3 { font-size: 1.08rem; }
+.cookie-grid h3 { margin-top: 0; }
 .summary-card p,
 .cookie-grid p,
 .contact-card p { margin-bottom: 0; }
 .cookie-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1rem; }
-.contact-card { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1rem; }
+.contact-card { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 
 .data-table-wrapper {
   margin-top: 1rem;
